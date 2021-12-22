@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Frontend-Mentor || E-commerce product page</title>
+</head>
+<body id="bdy">
+  <!-- HEADER -->
+    <header class="header">
+      <nav class="myMenu bdGrid">
+          
+            <div id="logo">
+              <img src="images/icon-menu.svg" class="menu" id="menu">
+              <img src="images/logo.svg" class="logo">
+            </div>
+
+            <div class="myList" id="myList">
+             <img src="images/icon-close.svg" class="close navItem">
+              <ul class="navList">
+                  <li class="navItem"><a href="#" class="navLink"> Collections</a></li>
+                  <li class="navItem"><a href="#" class="navLink"> Men</a></li>
+                  <li class="navItem"><a href="#" class="navLink"> Women</a></li>
+                  <li class="navItem"><a href="#" class="navLink"> About</a></li>
+                  <li class="navItem"><a href="#" class="navLink"> Contact</a></li>
+              </ul>
+            </div>
+          
+
+          <div class="div3" >
+            <span class="added"></span>
+            <img src="images/icon-cart.svg" class="cart">
+            <img src="images/image-avatar.png" class="avatar">
+          </div>
+
+          <div class="cont" id="myCart">
+
+            <p class="span">Cart</p>
+           
+            <!-- CART CONTAINER -->
+            <div id="cartCont">
+              <p class="empty">Your cart is empty</p>
+                <div class="switch" id="switch">
+                    <div class="p">
+                            <img src="images/image-product-1-thumbnail.jpg">
+                        <p>
+                            <span>Autumn Limited Edition</span><br>
+                            <span id="answ"> hello world</span>
+                        </p>
+                    </div>
+
+                    <span class="delete"><img src="images/icon-delete.svg"></span>
+                    <button class="btn2">Checkout</button>
+                </div>
+            </div>
+
+          </div>
+
+        </nav>
+    </header>
+
+   
+<!-- MAIN CONTENT -->
+    <section class="home">
+
+      <!-- Image slide container -->
+        <div class="slide">
+            <div class="imgBox">
+                <img src="images/image-product-1.jpg">
+            </div>
+            <div class="imgBox">
+                <img src="images/image-product-2.jpg">
+            </div>
+            <div class="imgBox">
+               <img src="images/image-product-3.jpg">
+            </div>
+            <div class="imgBox">
+              <img src="images/image-product-4.jpg">
+            </div>
+          <!-- PREVIOUS / NEXT FUNCTIONS -->
+            <span class="prev" onclick="plusSlide(-1)">&#10094;</span>
+            <span class="next" onclick="plusSlide(1)">&#10095;</span>
+<!-- THUMBNAILS -->
+            <div class="thumbNail">
+                <div class="thumbImg active" onclick="currentImg(1)">
+                    <img src="images/image-product-1-thumbnail.jpg">
+                </div>
+                <div class="thumbImg" onclick="currentImg(2)">
+                    <img src="images/image-product-2-thumbnail.jpg">
+                </div>
+                <div class="thumbImg" onclick="currentImg(3)">
+                    <img src="images/image-product-3-thumbnail.jpg">
+                </div>
+                <div class="thumbImg" onclick="currentImg(4)">
+                    <img src="images/image-product-4-thumbnail.jpg">
+                </div>
+            </div>
+        </div>
+        <!-- Modal LightBox Container -->
+        <div class="lightBox" id="openLightBox">
+      
+          <div class="modalslide">
+            <span class="closes">&times;</span>
+            <div class="modalImg">
+                <img src="images/image-product-1.jpg">
+            </div>
+            <div class="modalImg">
+                <img src="images/image-product-2.jpg">
+            </div>
+            <div class="modalImg">
+               <img src="images/image-product-3.jpg">
+            </div>
+            <div class="modalImg">
+              <img src="images/image-product-4.jpg">
+            </div>
+            <span class="modalPrev" onclick="plusSlide(-1)">&#10094;</span>
+            <span class="modalNext" onclick="plusSlide(1)">&#10095;</span>
+            <div class="thumbNail">
+                <div class="thumbImg active" onclick="currentImg(1)">
+                    <img src="images/image-product-1-thumbnail.jpg">
+                </div>
+                <div class="thumbImg" onclick="currentImg(2)">
+                    <img src="images/image-product-2-thumbnail.jpg">
+                </div>
+                <div class="thumbImg" onclick="currentImg(3)">
+                    <img src="images/image-product-3-thumbnail.jpg">
+                </div>
+                <div class="thumbImg" onclick="currentImg(4)">
+                    <img src="images/image-product-4-thumbnail.jpg">
+                </div>
+            </div>
+        </div>
+      </div>
+        
+        <!-- THE BODY CONTENTS -->
+        <div class="content">
+            <p class="comp">sneakers company</p>
+            <h2>Fall Limited Edition Sneakers</h2>
+            <p class="txt">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+            <div class="price">
+              <p><input type="text"  id="demo" value="125.00" readonly="">
+              <span>50%</span></p><p>$250.00</p>
+            </div>
+
+            <div class="inputVal">
+                <p id="sum" class="sum">
+                  <button onclick="subNum()" class="butn1">-</button>
+                  <input type="number" name="number" id="num"  value="3" readonly="">
+                  <button onclick="addNum()" class="butn1">+</button>
+                </p>
+                <button class="butn2" onclick="addToCart()">Add to cart</button>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="jsss.js"></script>
+</body>
+</html>
