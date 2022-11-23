@@ -1,0 +1,24 @@
+/**### Primary colors ###**/
+:root
+{
+    --boldBg-color: hsl(26, 100%, 55%);
+    --lightBg-color2: hsl(25, 100%, 94%);
+}
+
+/**### Neutral Colors ###**/
+
+:root
+{
+   --p-col: hsl(220, 13%, 13%);
+   --txt1-col: hsl(219, 9%, 45%);
+   --txt2-col: hsl(220, 14%, 75%);
+   --neutral-col4: hsl(223, 64%, 98%);
+   --neutral-col5: hsl(0, 0%, 100%);
+   --h2-col: hsl(0, 0%, 0%);
+}
+
+ul li
+{
+    position: relative;
+    list-style: none;
+}
